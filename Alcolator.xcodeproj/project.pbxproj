@@ -10,10 +10,11 @@
 		6EA994101AA54BA90083DD7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA9940F1AA54BA90083DD7C /* main.m */; };
 		6EA994131AA54BA90083DD7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA994121AA54BA90083DD7C /* AppDelegate.m */; };
 		6EA994161AA54BA90083DD7C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA994151AA54BA90083DD7C /* ViewController.m */; };
-		6EA994191AA54BA90083DD7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EA994171AA54BA90083DD7C /* Main.storyboard */; };
 		6EA9941B1AA54BA90083DD7C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EA9941A1AA54BA90083DD7C /* Images.xcassets */; };
 		6EA9941E1AA54BA90083DD7C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EA9941C1AA54BA90083DD7C /* LaunchScreen.xib */; };
 		6EA9942A1AA54BAA0083DD7C /* AlcolatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA994291AA54BAA0083DD7C /* AlcolatorTests.m */; };
+		6EF502381AAD17C700693EA9 /* BLCMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF502371AAD17C700693EA9 /* BLCMainMenuViewController.m */; };
+		6EF5023B1AAD1F2000693EA9 /* BLCWhiskeyViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF5023A1AAD1F2000693EA9 /* BLCWhiskeyViewController2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +35,15 @@
 		6EA994121AA54BA90083DD7C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6EA994141AA54BA90083DD7C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6EA994151AA54BA90083DD7C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		6EA994181AA54BA90083DD7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6EA9941A1AA54BA90083DD7C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6EA9941D1AA54BA90083DD7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6EA994231AA54BAA0083DD7C /* AlcolatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlcolatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EA994281AA54BAA0083DD7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6EA994291AA54BAA0083DD7C /* AlcolatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlcolatorTests.m; sourceTree = "<group>"; };
+		6EF502361AAD17C700693EA9 /* BLCMainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCMainMenuViewController.h; sourceTree = "<group>"; };
+		6EF502371AAD17C700693EA9 /* BLCMainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCMainMenuViewController.m; sourceTree = "<group>"; };
+		6EF502391AAD1F2000693EA9 /* BLCWhiskeyViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCWhiskeyViewController2.h; sourceTree = "<group>"; };
+		6EF5023A1AAD1F2000693EA9 /* BLCWhiskeyViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCWhiskeyViewController2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +87,12 @@
 			children = (
 				6EA994111AA54BA90083DD7C /* AppDelegate.h */,
 				6EA994121AA54BA90083DD7C /* AppDelegate.m */,
+				6EF502361AAD17C700693EA9 /* BLCMainMenuViewController.h */,
+				6EF502371AAD17C700693EA9 /* BLCMainMenuViewController.m */,
 				6EA994141AA54BA90083DD7C /* ViewController.h */,
 				6EA994151AA54BA90083DD7C /* ViewController.m */,
-				6EA994171AA54BA90083DD7C /* Main.storyboard */,
+				6EF502391AAD1F2000693EA9 /* BLCWhiskeyViewController2.h */,
+				6EF5023A1AAD1F2000693EA9 /* BLCWhiskeyViewController2.m */,
 				6EA9941A1AA54BA90083DD7C /* Images.xcassets */,
 				6EA9941C1AA54BA90083DD7C /* LaunchScreen.xib */,
 				6EA9940D1AA54BA90083DD7C /* Supporting Files */,
@@ -199,7 +206,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EA994191AA54BA90083DD7C /* Main.storyboard in Resources */,
 				6EA9941E1AA54BA90083DD7C /* LaunchScreen.xib in Resources */,
 				6EA9941B1AA54BA90083DD7C /* Images.xcassets in Resources */,
 			);
@@ -220,6 +226,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EA994161AA54BA90083DD7C /* ViewController.m in Sources */,
+				6EF502381AAD17C700693EA9 /* BLCMainMenuViewController.m in Sources */,
+				6EF5023B1AAD1F2000693EA9 /* BLCWhiskeyViewController2.m in Sources */,
 				6EA994131AA54BA90083DD7C /* AppDelegate.m in Sources */,
 				6EA994101AA54BA90083DD7C /* main.m in Sources */,
 			);
@@ -244,14 +252,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6EA994171AA54BA90083DD7C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6EA994181AA54BA90083DD7C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6EA9941C1AA54BA90083DD7C /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -346,6 +346,7 @@
 				INFOPLIST_FILE = Alcolator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -356,6 +357,7 @@
 				INFOPLIST_FILE = Alcolator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -412,6 +414,7 @@
 				6EA9942F1AA54BAA0083DD7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6EA994301AA54BAA0083DD7C /* Build configuration list for PBXNativeTarget "AlcolatorTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +423,7 @@
 				6EA994321AA54BAA0083DD7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

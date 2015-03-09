@@ -1,22 +1,19 @@
 //
-//  ViewController.h
+//  BLCWhiskeyViewController2.h
 //  Alcolator
 //
-//  Created by Casey Ward on 3/2/15.
+//  Created by Casey Ward on 3/8/15.
 //  Copyright (c) 2015 Casey Ward. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "ViewController.h"
 
-@interface ViewController : UIViewController
+@interface BLCWhiskeyViewController2 : ViewController
 
 @property (weak, nonatomic) UITextField *beerPercentTextField;
 @property (weak, nonatomic) UILabel *resultLabel;
 @property (weak, nonatomic) UISlider *beerCountSlider;
-@property (weak, nonatomic) UILabel *numberOfBeersLabel;
-
 
 - (void)buttonPressed:(UIButton *)sender;
 
 @end
-
