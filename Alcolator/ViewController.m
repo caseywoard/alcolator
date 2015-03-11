@@ -46,15 +46,27 @@
      self.numberOfBeersLabel = beersLabel;
  }
 
+- (instancetype) init {
+    self = [super init];
+    
+    if (self) {
+        self.title = NSLocalizedString(@"Wine", @"wine");
+        // Since we don't have icons, let's move the title to the middle of the tab bar
+        [self.tabBarItem setTitlePositionAdjustment:UIOffsetMake(0, -18)];
+    }
+    
+    return self;
+}
+
 - (void)viewDidLoad { // original one
     
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.edgesForExtendedLayout = UIRectEdgeNone;
     
-    self.title = NSLocalizedString(@"Wine", @"wine");
+    self.view.backgroundColor = [UIColor colorWithRed:0.741 green:0.925 blue:0.714 alpha:1];
     
-    self.view.backgroundColor = [UIColor colorWithRed:111/255.0f green:180/255.0f blue:194/255.0f alpha:1.0f];
+    //self.view.backgroundColor = [UIColor colorWithRed:111/255.0f green:180/255.0f blue:194/255.0f alpha:1.0f];
     
     // Tells the text field that `self`, this instance of `BLCViewController` should be treated as the text field's delegate
     self.beerPercentTextField.delegate = self;
@@ -105,6 +117,7 @@
     //CGFloat viewHeight = CGRectGetHeight(self.view.bounds); //my attempt
     
     CGFloat padding = 20;
+    CGFloat padding1 =10;
     CGFloat itemWidth = viewWidth - padding - padding;
     CGFloat itemHeight = 44;
     
@@ -112,19 +125,21 @@
     self.beerPercentTextField.frame = CGRectMake(padding, padding, itemWidth, itemHeight);
     
     CGFloat bottomOfTextField = CGRectGetMaxY(self.beerPercentTextField.frame);
-    self.beerCountSlider.frame = CGRectMake(padding, bottomOfTextField + padding, itemWidth, itemHeight);
+    self.beerCountSlider.frame = CGRectMake(padding, bottomOfTextField + padding1, itemWidth, itemHeight);
     
     CGFloat bottomOfSlider = CGRectGetMaxY(self.beerCountSlider.frame);
-    self.numberOfBeersLabel.frame = CGRectMake(padding, bottomOfSlider + padding, itemWidth, itemHeight);
+    self.numberOfBeersLabel.frame = CGRectMake(padding, bottomOfSlider + padding1, itemWidth, itemHeight);
     
     CGFloat bottomOfNumberOfBeersLabel = CGRectGetMaxY(self.beerCountSlider.frame);
-    self.resultLabel.frame = CGRectMake(padding, bottomOfNumberOfBeersLabel + padding, itemWidth, itemHeight * 4);//1
+    self.resultLabel.frame = CGRectMake(padding, bottomOfNumberOfBeersLabel + padding1, itemWidth, itemHeight * 2);//1
     
     CGFloat bottomOfLabel = CGRectGetMaxY(self.resultLabel.frame);
-    self.calculateButton.frame = CGRectMake(padding, bottomOfLabel + padding, itemWidth, itemHeight);
+    self.calculateButton.frame = CGRectMake(padding, bottomOfLabel + padding1, itemWidth, itemHeight);
     
-        //[self.resultLabel.frame]-20-[self.calculateButton.frame];
+    
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -143,6 +158,8 @@
 - (void)sliderValueDidChange:(UISlider *)sender {
     NSLog(@"Slider value changed to %f", sender.value);
     [self.beerPercentTextField resignFirstResponder];//<--whats this resign* method?
+    
+    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", (int) sender.value]];
     
     //updating the numberOfBeers label based on slider value
     int numberOfBeersValueFromSlider = self.beerCountSlider.value;
